@@ -1,7 +1,9 @@
+# frozen_string_literal: true
+
 class Item < ApplicationRecord
   # Associations
   belongs_to :todo
-  
+
   # Validations
-  validates_presence_of :name
+  validates :name, presence: true
 end
