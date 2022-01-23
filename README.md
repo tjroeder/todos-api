@@ -1,24 +1,3 @@
-# README
+# RESTful JSON API with Rails 5 tutorial
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This is a basic Rails 5 application using the API option. The Todo Application was created using this [tutorial](https://www.digitalocean.com/community/tutorials/build-a-restful-json-api-with-rails-5-part-one).
