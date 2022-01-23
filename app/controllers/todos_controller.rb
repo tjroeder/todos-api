@@ -27,6 +27,12 @@ class TodosController < ApplicationController
     head :no_content
   end
 
+  # DELETE /todos/:id
+  def destroy
+    @todo.destroy
+    head :no_content
+  end
+
   private
 
   def todo_params
