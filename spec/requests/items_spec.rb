@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'rails_helper'
 
 RSpec.describe 'Items API' do
@@ -9,7 +11,7 @@ RSpec.describe 'Items API' do
   # Test suite for GET /todos/:todo_id/items
   describe 'GET /todos/:todo_id/items' do
     before { get "/todos/#{todo_id}/items" }
-    
+
     context 'when todo exists' do
       it 'returns status code 200' do
         expect(response).to have_http_status(200)
@@ -49,7 +51,7 @@ RSpec.describe 'Items API' do
 
     context 'when todo item does not exist' do
       let(:id) { 0 }
-      
+
       it 'returns status code 404' do
         expect(response).to have_http_status(404)
       end
